@@ -1,0 +1,10 @@
+__pycache__
+.history
+.hypothesis/
+build/
+reports/
+node_modules/
+.env
+hardhat.config.js
+artifacts/
+cache/
