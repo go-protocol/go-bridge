@@ -43,11 +43,6 @@ contract BridgeLogic {
 
     /**
      * @dev 设置支持的任务
-     * @param taskType 
-     * @param taskHash 
-     * @param oneAddress 
-     * @param requireNum 
-     * @notice 
      */
     function supportTask(
         uint256 taskType,

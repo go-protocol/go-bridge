@@ -72,6 +72,14 @@ module.exports = {
       gas: 5500000,
       skipDryRun: true
     },
+    bsctest: {
+      provider: () => new HDWalletProvider(mnemonic, `https://data-seed-prebsc-1-s1.binance.org:8545/`),
+      network_id: 97
+    },
+    clvtest: {
+      provider: () => new HDWalletProvider(mnemonic, `https://rpc.clover.finance/`),
+      network_id: 1023
+    },
     // Useful for private networks
     // private: {
     // provider: () => new HDWalletProvider(mnemonic, `https://network.io`),
@@ -81,7 +89,7 @@ module.exports = {
   },
   compilers: {
     solc: {
-      version: "0.7.0",
+      version: "0.7.4",
       settings: { // See the solidity docs for advice about optimization and evmVersion
         optimizer: {
           enabled: true,

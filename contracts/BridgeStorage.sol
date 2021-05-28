@@ -20,7 +20,6 @@ contract BridgeStorage is Container {
      * @dev 判断支持者存在
      * @param taskHash 任务hash
      * @param user 用户地址
-     * @notice 
      */
     function supporterExists(bytes32 taskHash, address user) public view returns (bool) {
         return itemAddressExists(taskHash, user);
